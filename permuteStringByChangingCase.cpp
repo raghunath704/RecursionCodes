@@ -10,7 +10,7 @@ void helper(string s, vector<string> &ans, string res, int i) {
         ans.push_back(res);
         return;
     }
-    helper(s, ans, res + s[i], i + 1);
+    helper(s, ans, res + (char)tolower(s[i]), i + 1);
     helper(s, ans, res + (char)toupper(s[i]), i + 1);
 }
 
